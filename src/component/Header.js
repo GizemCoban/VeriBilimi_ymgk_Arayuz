@@ -30,8 +30,8 @@ class HeaderDesing extends React.Component{
 							<li className="menu-item current-menu-item"><Link to="/"> Anasayfa</Link></li>
 							<li className="menu-item"><Link to="/hkinedir">Hava Kalitesi Nedir?</Link></li>
 							<li className="menu-item"><Link to="/analizler">Analizler</Link></li>
-							<li className="menu-item"><a href="photos.html">Grafikler</a></li>
-							<li className="menu-item"><a href="contact.html">Hakkımda</a></li>
+							<li className="menu-item"><a href="/fotogalery">Grafikler</a></li>
+							<li className="menu-item"><a href="/hakkimda">Hakkımda</a></li>
 						</ul> 
 					</div>
 
@@ -39,9 +39,9 @@ class HeaderDesing extends React.Component{
                         <ul className="menu">
                             <li className="menu-item current-menu-item"><Link to="/"> Anasayfa</Link></li>
 							<li className="menu-item"><Link to="/hkinedir">Hava Kalitesi Nedir?</Link></li>
-							<li className="menu-item"><a href="analizler">Analizler</a></li>
-							<li className="menu-item"><a href="photos.html">Grafikler</a></li>
-							<li className="menu-item"><a href="contact.html">Hakkımda</a></li>
+							<li className="menu-item"><a href="/analizler">Analizler</a></li>
+							<li className="menu-item"><a href="/fotogalery">Grafikler</a></li>
+							<li className="menu-item"><a href="/hakkimda">Hakkımda</a></li>
 						</ul> 
                     </div>
                     </Container>

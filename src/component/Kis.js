@@ -16,14 +16,14 @@ class Kis extends React.Component {
     render() {
         return (
             <div>
-                <Container>
+               
                     <Grid divided='vertically'>
                         
 
                         <Grid.Row columns={1}>
                          
                             <Grid.Column>
-                                <Card>
+                                <Card fluid>
                                     <Card.Content>
                                         <Card.Header>KOCAELİ</Card.Header>
                                         <Card.Meta>
@@ -126,7 +126,7 @@ class Kis extends React.Component {
                         </Grid.Row>
                     </Grid>
 
-                </Container>
+                
 
 
             </div>

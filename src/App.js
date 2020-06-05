@@ -11,6 +11,9 @@ import PM10 from "./component/PM10";
 import O3 from "./component/O3";
 import HavaKalitesi from "./component/HavaKalitesi";
 import Analizler from "./component/Analizler";
+import FotografGalery from "./component/FotografGalery";
+import Hakkimda from "./component/Hakkimda";
+
 const history=createBrowserHistory();
 
 class App extends React.Component {
@@ -27,6 +30,9 @@ class App extends React.Component {
           <Route exact path="/o3" component={O3} /> 
           <Route exact path="/hkinedir" component={HavaKalitesi} /> 
           <Route exact path="/analizler" component={Analizler} /> 
+          <Route exact path="/fotogalery" component={FotografGalery} /> 
+          <Route exact path="/hakkimda" component={Hakkimda} /> 
+
           </Router>
           
       

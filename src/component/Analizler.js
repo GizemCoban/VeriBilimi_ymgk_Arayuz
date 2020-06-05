@@ -16,24 +16,28 @@ class Analizler extends React.Component {
                 <Container className="ortala">
 
 
-                    <Grid columns={2}>
+                    <Grid >
                         <Grid.Row>
-                            <Grid.Column>
+                        <Grid.Column width={2}></Grid.Column>
+                            <Grid.Column width={6}>
                                 <Ilkbahar />
                             </Grid.Column>
-                            <Grid.Column>
+                            <Grid.Column width={6}>
                                 <Yaz />
                             </Grid.Column>
+                            <Grid.Column width={2}></Grid.Column>
 
                         </Grid.Row>
 
                         <Grid.Row>
-                            <Grid.Column>
+                        <Grid.Column width={2}></Grid.Column>
+                            <Grid.Column width={6}>
                                 <Sonbahar />
                             </Grid.Column>
-                            <Grid.Column>
+                            <Grid.Column width={6}>
                                 <Kis />
                             </Grid.Column>
+                            <Grid.Column width={2}></Grid.Column>
 
                         </Grid.Row>
                     </Grid>

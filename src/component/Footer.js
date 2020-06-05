@@ -13,6 +13,12 @@ class FixedMenuLayout extends React.Component{
                 </List>
                 <p>Gizem ÇOBAN tarafından Yazılım Mühendisliğinde Güncel Konular Dersi İçin Yapılmıştır © Copyright 2020 Her Hakkı Saklıdır.</p>
               
+                      <a href="https://www.facebook.com/gizem.coban.900"><i className="facebook square icon big"></i></a> 
+                       <a href="https://twitter.com/Gizemm_Cobann"><i className="twitter square icon big"></i></a>
+                      <a href="https://www.linkedin.com/in/gizemmcobann/"><i className="linkedin square icon big"></i></a>
+                      
+                      
+              
             </Segment>)
     }
 }
