@@ -6,12 +6,10 @@ import { photos } from "./photos";
 import { Dropdown, Container, Grid, Image, Card, Icon,Popup } from 'semantic-ui-react';
 import HeaderDesign from "./Header";
 import Footer from "./Footer";
-
 class FotografGalery extends React.Component {
     state = {
         CurrentImage: 0,
         viewerIsOpen: false,
-
     }
     openLightbox = (event, { photo, index }) => {
         console.log(index)
@@ -25,7 +23,6 @@ class FotografGalery extends React.Component {
             CurrentImage: 0,
             viewerIsOpen: false,
         })
-
     }
     render() {
         return (
@@ -49,10 +46,8 @@ class FotografGalery extends React.Component {
                 </ModalGateway>
 
                 </Container>
-                <Footer />
-                
+                <Footer />          
             </div>
         )
     }
-
 } export default withRouter(FotografGalery);

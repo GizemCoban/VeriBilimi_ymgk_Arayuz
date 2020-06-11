@@ -3,10 +3,8 @@ import { withRouter } from 'react-router-dom';
 import { Dropdown, Container, Grid, Image, Card, Icon, Popup, Header, Segment } from 'semantic-ui-react';
 import HeaderDesign from "./Header";
 import Footer from "./Footer";
-import src1 from "./resimler/no2.png"
 
 class Hakkimda extends React.Component {
-
     render() {
         return (
             <div>
@@ -23,10 +21,7 @@ class Hakkimda extends React.Component {
                         <p style={{ margin: "30px",textAlign:"justify" }}>
                             Bilgisayar Programcılığı okurken Mediaclick adında bir şirkette zorunlu stajımı yaptım. Burada stajımı yaparken PHP programlama dilini öğrendim. Stajlarım dışında frelance içerik editörlüğü yaptım. Fırat üniversitesinde yazılım mühendisliğini okurken ise hem yaz stajımı hem de son sınıftaki iş yeri eğitimi adındaki programda uzun dönem stajımı Netaş A.Ş. React.js, Node,js ve MongoDb kullanarak bir e-ticaret sitesi geliştirdim. Şuan bu teknolojiler üzerine çalışıp kendimi geliştirmekteyim.
 </p>
-
                     </Segment>
-
-
                 </Container>
                 <Footer />
             </div>

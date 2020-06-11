@@ -7,9 +7,22 @@ import Sonbahar from "./Sonbahar";
 import Ilkbahar from "./Ilkbahar";
 import Footer from "./Footer";
 import HeaderDesign from "./Header";
-
+import axios from 'axios'
 class Analizler extends React.Component {
+	state = {
+		data: {}
+	}
+    async componentDidMount(){
+		console.log("sleam")
+       
+	   let res = await axios.get('http://127.0.0.1:5000/analiz')
+	   let val = JSON.parse(JSON.stringify(res.data))
+	   console.log(val)
+	   this.setState({data: val})
+    }
+
     render() {
+    
         return (
             <div>
                  <HeaderDesign/>
@@ -20,10 +33,10 @@ class Analizler extends React.Component {
                         <Grid.Row>
                         <Grid.Column width={2}></Grid.Column>
                             <Grid.Column width={6}>
-                                <Ilkbahar />
+                                <Ilkbahar data={this.state.data.ilkbahar}/>
                             </Grid.Column>
                             <Grid.Column width={6}>
-                                <Yaz />
+                                <Yaz data={this.state.data.yaz} />
                             </Grid.Column>
                             <Grid.Column width={2}></Grid.Column>
 
@@ -32,10 +45,10 @@ class Analizler extends React.Component {
                         <Grid.Row>
                         <Grid.Column width={2}></Grid.Column>
                             <Grid.Column width={6}>
-                                <Sonbahar />
+                                <Sonbahar data={this.state.data.sonbahar} />
                             </Grid.Column>
                             <Grid.Column width={6}>
-                                <Kis />
+                                <Kis data={this.state.data.kis}/>
                             </Grid.Column>
                             <Grid.Column width={2}></Grid.Column>
 

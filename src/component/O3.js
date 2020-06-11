@@ -30,9 +30,6 @@ class O3 extends React.Component {
                 <Footer />
             </div>
 
-
-
-
         )
     }
 }

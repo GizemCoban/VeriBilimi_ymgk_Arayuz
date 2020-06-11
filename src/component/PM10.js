@@ -12,9 +12,6 @@ class PM10 extends React.Component {
 
     render() {
         return (
-
-
-
             <div>
                 <HeaderDesign />
                 <Container text>

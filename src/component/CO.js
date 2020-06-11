@@ -12,8 +12,6 @@ class CO extends React.Component {
 
     render() {
         return (
-
-
             <div>
                 <HeaderDesign />
                 <Container text>
@@ -27,12 +25,9 @@ class CO extends React.Component {
 
                     </Segment>
 
-
-
                 </Container>
                 <Footer />
             </div>
-
         )
     }
 }

@@ -14,6 +14,8 @@ class Ilkbahar extends React.Component {
 
 
     render() {
+		console.log(this.props )
+		const data = this.props.data &&  JSON.parse(JSON.stringify(this.props.data))
         return (
             <div>
                     <Grid divided='vertically'>
@@ -31,7 +33,7 @@ class Ilkbahar extends React.Component {
                                     </Card.Content>
                                     <Image className="logo" src={ilkbahar} wrapped ui={false} />
                                     <Card.Meta>
-                                            <span className='date'>TAHMİN</span>
+                                            <span className='date'>{data && data.hki}</span>
                                         </Card.Meta>
                                     <Card.Content>
 
@@ -43,7 +45,7 @@ class Ilkbahar extends React.Component {
                                                         <span>PM</span>
                                                         <sub>10</sub>
                                                         <div>
-                                                            <span>-</span>
+                                                            <span>{this.props.data && this.props.data.PM10}</span>
                                                         </div>
 
                                                     </Grid.Column>
@@ -51,21 +53,21 @@ class Ilkbahar extends React.Component {
                                                         <span>SO</span>
                                                         <sub>2</sub>
                                                         <div>
-                                                            <span>-</span>
+                                                            <span>{this.props.data && this.props.data.SO2}</span>
                                                         </div>
                                                     </Grid.Column>
                                                     <Grid.Column>
                                                         <span>NO</span>
                                                         <sub>2</sub>
                                                         <div>
-                                                            <span>-</span>
+                                                            <span>{this.props.data && this.props.data.NO2}</span>
                                                         </div>
                                                     </Grid.Column>
                                                     <Grid.Column>
                                                         <span>O</span>
                                                         <sub>3</sub>
                                                         <div>
-                                                            <span>-</span>
+                                                            <span>{this.props.data && this.props.data.O3}</span>
                                                         </div>
                                                     </Grid.Column>
 
