@@ -2,6 +2,8 @@ import React from 'react'
 import { Divider, Grid, Header, Image, List, Segment, Container } from 'semantic-ui-react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Yaz from "./Yaz";
+import HaftaIci from "./HaftaIci";
+import HaftaSonu from "./HaftaSonu";
 import Kis from "./Kis";
 import Sonbahar from "./Sonbahar";
 import Ilkbahar from "./Ilkbahar";
@@ -13,8 +15,7 @@ class Analizler extends React.Component {
 		data: {}
 	}
     async componentDidMount(){
-		console.log("sleam")
-       
+		
 	   let res = await axios.get('http://127.0.0.1:5000/analiz')
 	   let val = JSON.parse(JSON.stringify(res.data))
 	   console.log(val)
@@ -49,6 +50,17 @@ class Analizler extends React.Component {
                             </Grid.Column>
                             <Grid.Column width={6}>
                                 <Kis data={this.state.data.kis}/>
+                            </Grid.Column>
+                            <Grid.Column width={2}></Grid.Column>
+
+                        </Grid.Row>
+                        <Grid.Row>
+                        <Grid.Column width={2}></Grid.Column>
+                            <Grid.Column width={6}>
+                                <HaftaIci data={this.state.data.haftaici} />
+                            </Grid.Column>
+                            <Grid.Column width={6}>
+                                <HaftaSonu data={this.state.data.haftasonu}/>
                             </Grid.Column>
                             <Grid.Column width={2}></Grid.Column>
 

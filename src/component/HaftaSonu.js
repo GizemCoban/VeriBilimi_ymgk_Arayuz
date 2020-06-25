@@ -1,7 +1,7 @@
 import React from "react";
 import { withRouter } from 'react-router-dom';
 import { Dropdown, Container, Grid, Image, Card, Icon,Popup } from 'semantic-ui-react';
-import kis from "./resimler/karli.png"
+import tatil from "./resimler/tatil.png"
 
 
 const style = {
@@ -10,7 +10,7 @@ const style = {
     padding: '0.5em',
 }
 
-class Kis extends React.Component {
+class Yaz extends React.Component {
 
 
     render() {
@@ -51,7 +51,7 @@ class Kis extends React.Component {
         }
         return (
             <div>
-               
+                
                     <Grid divided='vertically'>
                         
 
@@ -62,10 +62,10 @@ class Kis extends React.Component {
                                     <Card.Content>
                                         <Card.Header>KOCAELİ</Card.Header>
                                         <Card.Meta>
-                                            <span className='date'>Kış Mevsiminin Analizi</span>
+                                            <span className='date'>Tatil Günleri İçin Analiz</span>
                                         </Card.Meta>
                                     </Card.Content>
-                                    <Image className="logo" src={kis} wrapped ui={false} />
+                                    <Image className="logo" src={tatil} wrapped ui={false} />
                                     <Card.Meta style={{padding: '10px'}}>
                                     <span className='date' style={{fontSize:"18px", fontWeight:"bold"}}>
                                         {hkiSeviye}
@@ -172,9 +172,8 @@ class Kis extends React.Component {
 
                 
 
-
             </div>
         )
     }
 }
-export default (Kis);
+export default (Yaz);
